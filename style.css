@@ -1,0 +1,115 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(82, 82, 250),lightblue,rgb(187, 177, 177));
+}
+.wrapper{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: linear-gradient(rgb(170, 160, 160),lightblue , rgb(90, 90, 250));
+    border-radius: 35px;
+    padding: 75px;
+}   
+
+.wrapper header{
+    font-size: 30px;
+    color:rgb(8, 4, 34);
+    font-weight: 600;
+}
+.wrapper .inputField{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+}
+.inputField input{
+    width: 90%;
+    height: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    background: linear-gradient(rgb(82, 82, 250),lightblue,rgb(187, 177, 177));
+    font-size: 17px;
+    color: rgb(8, 4, 34);
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.inputField button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: linear-gradient(rgb(82, 82, 250),lightblue,rgb(187, 177, 177));
+    font-size: 18px;
+    color: rgb(8, 4, 34);
+    cursor : pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.todoList li{
+    list-style: none;
+    height: 35px;
+    line-height: 25px;
+    position: relative;
+    background: linear-gradient(rgb(82, 82, 250),lightblue,rgb(187, 177, 177));
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    color: rgb(8, 4, 34);
+    overflow: hidden;
+    cursor: default;
+}
+.todoList li span{
+    position: absolute;
+    right: -40px;
+    height: 35px;
+    background: linear-gradient( rgb(82, 82, 250),rgb(175, 161, 155),rgb(187, 177, 177));
+    color: rgb(8, 4, 34);
+    width: 30px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.todoList li:hover span{
+    right: 0px;
+}
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer button{
+    border: none;
+    outline: none;
+    background: linear-gradient(rgb(82, 82, 250),lightblue,rgb(187, 177, 177));
+    font-size: 17px;
+    color: rgb(8, 4, 34);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px;
+    margin-left: 5px;
+}
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
